@@ -7,6 +7,12 @@ https://bun.sh/
 bun i
 ```
 
+## setup env
+```bash
+cp ./backend/.env.example ./backend/.env
+cp ./frontend/.env.example ./frontend/.env
+```
+
 ## running dev
 - at root folder
 ```bash

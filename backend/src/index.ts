@@ -1,7 +1,7 @@
 import { fetchRequestHandler } from '@trpc/server/adapters/fetch'
 
 export default {
-  port: 5000,
+  port: process.env.PORT,
   fetch: async (request: Request) => {
     if (request.method === 'OPTIONS') return new Response('', {
       status: 200,
