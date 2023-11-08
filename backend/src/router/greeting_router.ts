@@ -1,12 +1,10 @@
-import { t } from './trpc'
-import { z } from 'zod' 
+import { z } from "zod";
+import { t } from "../trpc";
 
-export const appRouter = t.router({
+export const greeting_router = t.router({
   greeting: t.procedure
     .input(z.object({
       name: z.string().optional().default('tRPC v10')
     }))
     .query(({ input }) => `hello ${input.name}!`),
 })
- 
-export type AppRouter = typeof appRouter

@@ -7,9 +7,11 @@
   },
   "devDependencies": {
     "bun-types": "^1.0.10",
+    "prisma": "5.5.2",
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@prisma/client": "5.5.2",
     "@trpc/server": "^10.43.1",
     "zod": "^3.22.4"
   }
